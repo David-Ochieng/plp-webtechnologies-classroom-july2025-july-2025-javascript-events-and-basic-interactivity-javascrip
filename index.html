@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <p>Explore these interactive features built with JavaScript</p>
+    </header>
+
+    <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+
+    <main>
+        <!-- Part 1: Event Handling Examples -->
+        <section id="event-section">
+            <h2>Event Handling Examples</h2>
+            
+            <div class="event-examples">
+                <div class="event-box" id="clickBox">
+                    <h3>Click Event</h3>
+                    <p>Click this box to change its color</p>
+                </div>
+                
+                <div class="event-box" id="mouseoverBox">
+                    <h3>Mouseover Event</h3>
+                    <p>Hover over this box to see an effect</p>
+                </div>
+                
+                <div class="event-box" id="keypressBox">
+                    <h3>Keypress Event</h3>
+                    <p>Type any key to change this box's color</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: Interactive Elements -->
+        <section id="interactive-section">
+            <h2>Interactive Elements</h2>
+            
+            <!-- Counter/Button Game -->
+            <div class="interactive-element">
+                <h3>Click Counter Game</h3>
+                <p>How many times can you click in 10 seconds?</p>
+                <div class="counter-game">
+                    <button id="startGame">Start Game</button>
+                    <div class="game-display">
+                        <p>Time left: <span id="timeLeft">10</span>s</p>
+                        <p>Clicks: <span id="clickCount">0</span></p>
+                    </div>
+                    <button id="clickButton" disabled>Click Me!</button>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="interactive-element">
+                <h3>FAQ Section</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">What is JavaScript? <span class="toggle-icon">+</span></div>
+                        <div class="faq-answer">
+                            <p>JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What are event listeners? <span class="toggle-icon">+</span></div>
+                        <div class="faq-answer">
+                            <p>Event listeners are functions that wait for a specific event to occur on a webpage, like a click or keypress, and then execute code in response.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is DOM manipulation? <span class="toggle-icon">+</span></div>
+                        <div class="faq-answer">
+                            <p>DOM manipulation refers to changing the structure, style, or content of a web page using JavaScript after it has loaded.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section id="form-section">
+            <h2>Form Validation</h2>
+            <p>Please fill out this form with your information:</p>
+            
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password">
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+                
+                <button type="submit" id="submitButton">Submit Form</button>
+            </form>
+            
+            <div id="successMessage" class="success-message">
+                <h3>Form Submitted Successfully!</h3>
+                <p>Thank you for completing the form.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive Web Page Assignment &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
